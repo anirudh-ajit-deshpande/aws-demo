@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'aws s3 cp src s3://demo-bucket-blah-blah --revursive'
+                sh 'aws s3 cp src s3://demo-bucket-blah-blah --recursive'
             }
         }
     }
