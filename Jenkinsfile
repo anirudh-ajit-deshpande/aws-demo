@@ -4,6 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo '********** BUILD STEP STARTED!!! ************'
+                sh ''
                 sh 'python3.7 src/main.py'
                 echo '*********************************************'
             }
